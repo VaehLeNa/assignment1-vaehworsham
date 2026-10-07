@@ -7,74 +7,67 @@ body {
     color: #222;
 }
 
-
-/* Header */
+/* Fixed Header */
 header {
     position: fixed;
     top: 0;
     width: 100%;
-    background-color: #000000;
+    background-color: #000;
     color: white;
     text-align: center;
-    padding: 15px 0;
+    padding: 8px 0;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
     z-index: 1000;
 }
 
-
 /* Header Title */
 header h1 {
-    margin: 5px 0 10px;
-    font-size: 32px;
+    margin: 2px 0;
+    font-size: 24px;
 }
 
-
-/* Header Image */
+/* Logo */
 header img {
-    width: 150px;
-    height: 150px;
+    width: 80px;
+    height: 80px;
     display: block;
-    margin: 10px auto;
+    margin: 5px auto;
 }
 
-
-/* Header Description */
+/* Description */
 header p {
-    margin: 5px 0 10px;
+    margin: 2px 0;
+    font-size: 14px;
 }
-
 
 /* Navigation */
 nav {
-    margin-top: 5px;
+    margin: 3px 0;
 }
 
 nav a {
     color: white;
     text-decoration: none;
-    margin: 0 15px;
-    padding: 8px 12px;
+    margin: 0 10px;
+    padding: 5px 8px;
 }
-
 
 /* Navigation Hover Effect */
 nav a:hover {
-    background-color: #555555;
+    background-color: #555;
     border-radius: 5px;
 }
-
 
 /* Main Content */
 main {
     min-height: 100vh;
-    padding: 300px 20px 80px;
+    padding: 190px 20px 60px;
 
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
-
 
 /* Sections */
 section {
@@ -83,10 +76,9 @@ section {
     margin-bottom: 40px;
 }
 
-
 /* Footer */
 footer {
-    background-color: #000000;
+    background-color: #000;
     color: white;
     text-align: center;
     padding: 20px;
