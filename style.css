@@ -1,4 +1,4 @@
-/* General Styling */
+/* General Page Styling */
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
@@ -6,6 +6,8 @@ body {
     background-color: #f5f5f5;
     color: #222;
 }
+
+
 /* Header */
 header {
     position: fixed;
@@ -14,11 +16,24 @@ header {
     background-color: #000000;
     color: white;
     text-align: center;
-    padding: 15px 0;
+    padding: 20px 0;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
     z-index: 1000;
 }
+
+
+/* Header Image */
+header img {
+    display: block;
+    margin: 15px auto;
+}
+
+
 /* Navigation */
+nav {
+    margin-top: 15px;
+}
+
 nav a {
     color: white;
     text-decoration: none;
@@ -26,19 +41,34 @@ nav a {
     padding: 8px 12px;
 }
 
+
+/* Navigation Hover Effect */
 nav a:hover {
-    background-color: #555;
+    background-color: #555555;
     border-radius: 5px;
 }
+
+
 /* Main Content */
 main {
     min-height: 100vh;
-    padding: 140px 20px 80px;
+    padding: 450px 20px 80px;
+
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
+
+
+/* Sections */
+section {
+    max-width: 900px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+
 /* Footer */
 footer {
     background-color: #000000;
