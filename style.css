@@ -6,3 +6,43 @@ body {
     background-color: #f5f5f5;
     color: #222;
 }
+/* Header */
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #000000;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+}
+/* Navigation */
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    padding: 8px 12px;
+}
+
+nav a:hover {
+    background-color: #555;
+    border-radius: 5px;
+}
+/* Main Content */
+main {
+    min-height: 100vh;
+    padding: 140px 20px 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+/* Footer */
+footer {
+    background-color: #000000;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
