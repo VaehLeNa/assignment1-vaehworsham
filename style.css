@@ -1,13 +1,29 @@
-/* General Page Styling */
+
+/* ==============================
+   GENERAL PAGE STYLING
+============================== */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 190px;
+}
+
 body {
     font-family: Arial, sans-serif;
-    line-height: 1.6;
+    line-height: 1.7;
     margin: 0;
     background-color: #f5f5f5;
     color: #222;
 }
 
-/* Fixed Header */
+/* ==============================
+   HEADER
+============================== */
+
 header {
     position: fixed;
     top: 0;
@@ -15,71 +31,175 @@ header {
     background-color: #000;
     color: white;
     text-align: center;
-    padding: 8px 0;
+    padding: 8px 15px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
     z-index: 1000;
 }
 
-/* Header Title */
 header h1 {
     margin: 2px 0;
-    font-size: 24px;
+    font-size: 26px;
+    letter-spacing: 1px;
 }
 
-/* Logo */
 header img {
     width: 80px;
     height: 80px;
     display: block;
     margin: 5px auto;
+    object-fit: contain;
 }
 
-/* Description */
 header p {
-    margin: 2px 0;
+    margin: 2px 0 8px;
     font-size: 14px;
 }
 
-/* Navigation */
+/* ==============================
+   NAVIGATION
+============================== */
+
 nav {
-    margin: 3px 0;
+    margin: 8px 0 5px;
 }
 
 nav a {
+    display: inline-block;
     color: white;
     text-decoration: none;
-    margin: 0 10px;
-    padding: 5px 8px;
+    margin: 0 8px;
+    padding: 7px 12px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
 }
 
-/* Navigation Hover Effect */
 nav a:hover {
     background-color: #555;
-    border-radius: 5px;
 }
 
-/* Main Content */
+/* ==============================
+   MAIN CONTENT
+============================== */
+
 main {
     min-height: 100vh;
-    padding: 190px 20px 60px;
-
+    padding: 220px 20px 60px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
 
-/* Sections */
+/* ==============================
+   CONTENT SECTIONS
+============================== */
+
 section {
+    width: 100%;
     max-width: 900px;
     text-align: center;
-    margin-bottom: 40px;
+    margin-bottom: 35px;
+    padding: 35px 30px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
 }
 
-/* Footer */
+section h2 {
+    font-size: 28px;
+    margin-top: 0;
+    margin-bottom: 12px;
+    color: #111;
+}
+
+section h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #555;
+}
+
+section p {
+    font-size: 16px;
+    max-width: 750px;
+    margin: 0 auto 20px;
+}
+
+/* ==============================
+   BUTTONS
+============================== */
+
+.button {
+    display: inline-block;
+    background-color: #000;
+    color: white;
+    text-decoration: none;
+    padding: 11px 22px;
+    margin-top: 10px;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: background-color 0.3s ease,
+                transform 0.3s ease;
+}
+
+.button:hover {
+    background-color: #444;
+    transform: translateY(-2px);
+}
+
+/* ==============================
+   FOOTER
+============================== */
+
 footer {
     background-color: #000;
     color: white;
     text-align: center;
     padding: 20px;
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+}
+
+/* ==============================
+   MOBILE RESPONSIVENESS
+============================== */
+
+@media screen and (max-width: 600px) {
+
+    header h1 {
+        font-size: 21px;
+    }
+
+    header img {
+        width: 65px;
+        height: 65px;
+    }
+
+    header p {
+        font-size: 12px;
+    }
+
+    nav a {
+        margin: 2px;
+        padding: 6px 9px;
+        font-size: 14px;
+    }
+
+    main {
+        padding: 195px 15px 40px;
+    }
+
+    section {
+        padding: 25px 18px;
+    }
+
+    section h2 {
+        font-size: 24px;
+    }
+
+    section p {
+        font-size: 15px;
+    }
 }
