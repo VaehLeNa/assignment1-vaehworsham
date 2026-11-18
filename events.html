@@ -1,15 +1,25 @@
+
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Events - Black Student Union</title>
+    <title>BSU Events | Mount St. Joseph University</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
     <header>
-        <h1>BSU Events</h1>
+        <h1>Black Student Union</h1>
+
+        <img src="BSU logo pt4.png"
+             alt="Black Student Union logo"
+             width="300"
+             height="300">
+
+        <p>Building community, connection, and belonging on campus.</p>
 
         <nav>
             <a href="index.html">Home</a>
@@ -18,54 +28,269 @@
         </nav>
     </header>
 
-    <main>
+    <main class="events-main">
 
-        <section>
-            <h2>Upcoming Events</h2>
+        <section class="events-intro">
+            <h2>Upcoming BSU Events</h2>
+
+            <h3>Spring 2027 | January – April</h3>
+
             <p>
-                This section will feature upcoming Black Student Union
-                meetings, programs, social events, and campus activities.
+                From cultural experiences and social gatherings to
+                campus involvement and friendly competition, there's
+                always something happening with BSU.
+                Explore our upcoming events and find a way to get involved!
             </p>
         </section>
 
-        <section>
-            <h2>Social Events</h2>
+        <!-- Event Category Filter -->
+        <section class="event-filter">
+            <h2>Explore Events</h2>
 
-            <h3>Game Nights</h3>
-            <p>
-                This section will provide information about BSU game nights
-                and other opportunities for students to socialize and build
-                connections.
-            </p>
+            <p>Choose a category to find events that interest you.</p>
 
-            <h3>Movie Nights</h3>
-            <p>
-                This section will describe movie nights and other casual
-                events hosted by the organization.
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">
+                    All Events
+                </button>
+
+                <button class="filter-btn" data-filter="cultural">
+                    Cultural
+                </button>
+
+                <button class="filter-btn" data-filter="social">
+                    Social
+                </button>
+
+                <button class="filter-btn" data-filter="athletics">
+                    Athletics
+                </button>
+
+                <button class="filter-btn" data-filter="recreation">
+                    Recreation
+                </button>
+            </div>
+
+            <p id="event-count" aria-live="polite">
+                Showing 7 events
             </p>
         </section>
 
-        <section>
-            <h2>Community Events</h2>
+        <!-- JANUARY -->
+        <section class="month-section">
+            <h2>January 2027</h2>
 
-            <h3>Service Projects</h3>
-            <p>
-                This section will highlight community service projects and
-                opportunities for members to make a positive impact.
-            </p>
+            <div class="event-grid">
 
-            <h3>Campus Programs</h3>
-            <p>
-                This section will include information about educational,
-                cultural, and community-focused programs hosted by BSU.
-            </p>
+                <article class="event-card" data-category="social">
+                    <span class="event-status">Scheduled</span>
+
+                    <p class="event-category">Social & Personal Growth</p>
+
+                    <h3>Vision Board w/ Katrice</h3>
+
+                    <p>
+                        Start the new year with intention! Join BSU
+                        and Katrice for a creative vision board
+                        experience focused on personal goals,
+                        aspirations, and the year ahead.
+                    </p>
+
+                    <p class="event-details">
+                        <strong>Date:</strong> January 19, 2027
+                    </p>
+
+                    <p class="event-details">
+                        <strong>Location:</strong> Molloy Room
+                    </p>
+                </article>
+
+                <article class="event-card" data-category="athletics">
+                    <span class="event-status tba">Date TBA</span>
+
+                    <p class="event-category">Athletics & Campus Support</p>
+
+                    <h3>Track & Field Support</h3>
+
+                    <p>
+                        Come together with BSU to show support for
+                        our Mount student-athletes and celebrate
+                        their dedication and hard work.
+                    </p>
+
+                    <p class="event-details">
+                        <strong>Date:</strong> To Be Announced
+                    </p>
+
+                    <p class="event-details">
+                        <strong>Location:</strong> Joe Lions Grill
+                    </p>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- FEBRUARY -->
+        <section class="month-section">
+            <h2>February 2027</h2>
+
+            <div class="event-grid">
+
+                <article class="event-card" data-category="cultural">
+                    <span class="event-status">Scheduled</span>
+
+                    <p class="event-category">Culture & Entrepreneurship</p>
+
+                    <h3>Black Vendors Day</h3>
+
+                    <p>
+                        Celebrate entrepreneurship, creativity,
+                        and community by supporting Black-owned
+                        businesses and connecting with local vendors.
+                    </p>
+
+                    <p class="event-details">
+                        <strong>Date:</strong> February 5, 2027
+                    </p>
+
+                    <p class="event-details">
+                        <strong>Location:</strong> Seton Lobby
+                    </p>
+
+                    <p class="event-details">
+                        <strong>Coordinators:</strong> Nevaeh & Dre
+                    </p>
+                </article>
+
+                <article class="event-card" data-category="social">
+                    <span class="event-status">Scheduled</span>
+
+                    <p class="event-category">Food & Fellowship</p>
+
+                    <h3>Soul Food Social</h3>
+
+                    <p>
+                        Bring students together over food, fellowship,
+                        and meaningful connections while celebrating
+                        culture and community.
+                        A possible Senior Night recognition is
+                        also being considered.
+                    </p>
+
+                    <p class="event-details">
+                        <strong>Date:</strong> February 26, 2027
+                    </p>
+
+                    <p class="event-details">
+                        <strong>Location:</strong> Molloy Room
+                    </p>
+
+                    <p class="event-details">
+                        <strong>Event name:</strong> Working title
+                    </p>
+                </article>
+
+                <article class="event-card" data-category="athletics">
+                    <span class="event-status tba">Date TBA</span>
+
+                    <p class="event-category">Athletics & Campus Support</p>
+
+                    <h3>Men's Basketball Support</h3>
+
+                    <p>
+                        Show up and support the Mount men's basketball
+                        team as BSU comes together to cheer on our
+                        student-athletes.
+                    </p>
+
+                    <p class="event-details">
+                        <strong>Date:</strong> To Be Announced
+                    </p>
+
+                    <p class="event-details">
+                        <strong>Location:</strong> Harrington Gym
+                    </p>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- MARCH -->
+        <section class="month-section">
+            <h2>March 2027</h2>
+
+            <div class="event-grid">
+
+                <article class="event-card" data-category="recreation">
+                    <span class="event-status">Scheduled</span>
+
+                    <p class="event-category">Recreation & Competition</p>
+
+                    <h3>Kickball Tournament</h3>
+
+                    <p>
+                        Bring your competitive spirit! Join BSU
+                        for a fun-filled kickball tournament centered
+                        on teamwork, friendly competition, and
+                        campus connection.
+                    </p>
+
+                    <p class="event-details">
+                        <strong>Date:</strong> March 12, 2027
+                    </p>
+
+                    <p class="event-details">
+                        <strong>Location:</strong> Fieldhouse
+                    </p>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- APRIL -->
+        <section class="month-section">
+            <h2>April 2027</h2>
+
+            <div class="event-grid">
+
+                <article class="event-card" data-category="cultural">
+                    <span class="event-status">Scheduled</span>
+
+                    <p class="event-category">Art & Cultural Celebration</p>
+
+                    <h3>Sip and Paint</h3>
+
+                    <p>
+                        Close out the semester with a creative
+                        gathering celebrating artistic expression,
+                        cultural appreciation, and community through art.
+                        Multicultural theme and additional details
+                        are still being finalized.
+                    </p>
+
+                    <p class="event-details">
+                        <strong>Date:</strong> April 27, 2027
+                    </p>
+
+                    <p class="event-details">
+                        <strong>Location:</strong> Molloy Room
+                    </p>
+
+                    <p class="event-details">
+                        <strong>Event name:</strong> Working title
+                    </p>
+                </article>
+
+            </div>
         </section>
 
     </main>
 
     <footer>
-        <p>&copy; 2026 Black Student Union. All rights reserved.</p>
+        <p>&copy; 2026 Black Student Union | Mount St. Joseph University</p>
     </footer>
+
+    <script src="script.js"></script>
 
 </body>
 </html>
